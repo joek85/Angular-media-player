@@ -1,0 +1,9 @@
+<div class="grid-container">
+  <app-search-card *ngFor="let card of filterItemsOfType('video')"
+                   Title={{card.title}}
+                   Author={{card.author.name}}
+                   AuthorThumb={{card.author.bestAvatar.url}}
+                   Thumbnail={{card.bestThumbnail.url}}
+  ></app-search-card>
+</div>
+
